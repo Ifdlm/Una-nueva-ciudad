@@ -8,5 +8,10 @@
 
 ### Ciudadanos del mundo que quieran estudiar cómo está la situación en Chile y cómo se ha abordado.
 
-Creación de identidad visual: ideas generadas, conceptos explorados, antecedentes y referentes vistos, justificación de las elecciones finales.
-Prototipado: justificación de la propuesta de navegación y distribución de la información.
+## Creación de identidad visual: 
+
+### Al tratar un tema medioambiental, decidimos utilizar colores verdes y una paleta a fin. Tipografía, la elegida fue Open Sans, legible para todos y universal. El logo juega con los íconos y puede ser utilizado como logo e isotipo. Es universal y los colores pueden ser adaptados al fondo. 
+
+## Prototipado: justificación de la propuesta de navegación y distribución de la información.
+
+### El prototipado es simple, minimalista y fácil de utilizar. 
