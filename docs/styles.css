@@ -8,6 +8,10 @@ header {
     padding: 20px;
 }
 
+.site-isotipo {
+    width: 50px; /* Ajusta el tamaño según tus preferencias */
+    margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+
 h1 {
     margin: 0; /* Eliminar el margen predeterminado del h1 */
 }
