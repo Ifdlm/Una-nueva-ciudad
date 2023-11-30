@@ -42,4 +42,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-image: url('grafico.png'); /* Reemplaza 'grafico.png' con la ruta correcta a tu imagen */
 }
