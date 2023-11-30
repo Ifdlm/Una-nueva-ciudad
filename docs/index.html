@@ -31,6 +31,46 @@
         <p>Descubre de manera interactiva esta problemática a través de nuestros gráficos que representan esta situación.</p>
     </section>
 
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vertederos Ilegales</title>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+      <canvas id="vertederosChart" width="400" height="400"></canvas>
+    
+      <script>
+        // Datos
+        var data = {
+          labels: ['Terrenos Públicos', 'Terrenos Privados', 'No Declarados'],
+          datasets: [{
+            data: [35, 42, 23],
+            backgroundColor: ['#4CAF50', '#8BC34A', '#CDDC39'], // Paleta de colores verdes
+          }]
+        };
+    
+        // Opciones
+        var options = {
+          responsive: true,
+          maintainAspectRatio: false,
+        };
+    
+        // Obtener el contexto del lienzo
+        var ctx = document.getElementById('vertederosChart').getContext('2d');
+    
+        // Crear el gráfico de torta
+        var myPieChart = new Chart(ctx, {
+          type: 'pie',
+          data: data,
+          options: options
+        });
+      </script>
+    </body>
+    </html>
+
     <section class="white-bg green-text">
         <h2>¿Qué podemos hacer? ¿Se está haciendo algo?</h2>
         <p>El Sistema de Información Ambiental de Chile, ente perteneciente al Ministerio de Medioambiente, informó que existen importantes avances previos en materia de sistemas de información de residuos...</p>
@@ -47,3 +87,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
