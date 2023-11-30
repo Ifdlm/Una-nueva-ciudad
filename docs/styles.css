@@ -47,3 +47,20 @@ button {
 button:hover {
     background-color: darkgreen;
 }
+
+#color-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#color-btn:hover {
+    background-color: darkblue;
+}
+
+
+
