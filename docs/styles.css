@@ -64,15 +64,30 @@ section {
     margin-top: 20px;
 }
 
-}
-canvas {
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #333;
-  }
+document.addEventListener('DOMContentLoaded', function () {
+    // Datos para el gráfico de torta
+    var data = {
+        labels: ['Terrenos Públicos', 'Terrenos Privados', 'No Declarados'],
+        datasets: [{
+            data: [35, 42, 23],
+            backgroundColor: ['#5cb85c', '#4cae4c', '#5bc0de'], // Paleta de colores verdes
+        }]
+    };
 
+    // Configuración del gráfico
+    var options = {
+        responsive: true,
+        maintainAspectRatio: false,
+    };
+
+    // Obtener el contexto del lienzo
+    var ctx = document.getElementById('pieChart').getContext('2d');
+
+    // Crear el gráfico de torta
+    var myPieChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: options
+    });
+});
 
