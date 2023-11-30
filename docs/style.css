@@ -1,15 +1,15 @@
 /* styles.css */
 
 body {
-    background-color: #ffffff; /* Blanco */
-    color: #008000; /* Verde oscuro */
+    background-color: white;
+    color: black;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #c0ffc0; /* Verde claro */
+    background-color: lightgreen;
     padding: 10px;
     text-align: center;
 }
@@ -21,11 +21,11 @@ section {
 }
 
 h1 {
-    color: #008000; /* Verde oscuro */
+    color: green;
 }
 
 h2 {
-    border-bottom: 2px solid #008000; /* Verde oscuro */
+    border-bottom: 2px solid green;
     padding-bottom: 5px;
     margin-top: 20px;
 }
@@ -34,13 +34,9 @@ p {
     line-height: 1.5;
 }
 
-/* Pie de página */
 footer {
-    background-color: #008000; /* Verde oscuro */
-    color: #ffffff; /* Blanco */
+    background-color: green;
+    color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
