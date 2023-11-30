@@ -4,18 +4,12 @@ body {
 }
 
 header {
-    background-color: white;
     text-align: center;
     padding: 20px;
 }
 
 h1 {
-    color: green;
-}
-
-section {
-    padding: 20px;
-    margin-bottom: 20px;
+    margin: 0; /* Eliminar el margen predeterminado del h1 */
 }
 
 .green-bg {
@@ -34,20 +28,6 @@ section {
     color: white;
 }
 
-button {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: darkgreen;
-}
-
 #color-btn {
     background-color: blue;
     color: white;
@@ -60,6 +40,8 @@ button:hover {
 
 #color-btn:hover {
     background-color: darkblue;
+}
+
 }
 
 
