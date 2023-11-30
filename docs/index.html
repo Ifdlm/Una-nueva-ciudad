@@ -49,41 +49,17 @@
 </html>
 
 <!DOCTYPE html>
-    <html lang="es">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Vertederos Ilegales</title>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </head>
-    <body>
-      <canvas id="vertederosChart" width="400" height="400"></canvas>
-    
-      <script>
-        // Datos
-        var data = {
-          labels: ['Terrenos Públicos', 'Terrenos Privados', 'No Declarados'],
-          datasets: [{
-            data: [35, 42, 23],
-            backgroundColor: ['#4CAF50', '#8BC34A', '#CDDC39'], // Paleta de colores verdes
-          }]
-        };
-    
-        // Opciones
-        var options = {
-          responsive: true,
-          maintainAspectRatio: false,
-        };
-    
-        // Obtener el contexto del lienzo
-        var ctx = document.getElementById('vertederosChart').getContext('2d');
-    
-        // Crear el gráfico de torta
-        var myPieChart = new Chart(ctx, {
-          type: 'pie',
-          data: data,
-          options: options
-        });
-      </script>
-    </body>
-    </html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertederos Ilegales</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <canvas id="vertederosChart" width="400" height="400"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
