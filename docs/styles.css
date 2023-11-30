@@ -4,28 +4,40 @@ body {
 }
 
 header {
+    background-color: darkgreen;
     text-align: center;
     padding: 20px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del header */
+    justify-content: center; /* Centra horizontalmente el contenido del header */
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    margin-left: 10px; /* Espacio entre el isotipo y el título */
 }
 
 .site-isotipo {
-    width: 50px; /* Ajusta el tamaño según tus preferencias */
-    margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+    width: 50px;
+}
 
-h1 {
-    margin: 0; /* Eliminar el margen predeterminado del h1 */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .green-bg {
-    background-color: lightgreen;
+    background-color: darkgreen;
 }
 
 .white-bg {
     background-color: white;
+    color: darkgreen;
 }
 
 .green-text {
-    color: green;
+    color: darkgreen;
 }
 
 .white-text {
@@ -33,7 +45,7 @@ h1 {
 }
 
 #color-btn {
-    background-color: blue;
+    background-color: darkgreen;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -43,7 +55,13 @@ h1 {
 }
 
 #color-btn:hover {
-    background-color: darkblue;
+    background-color: white;
+    color: darkgreen;
+}
+
+.site-image {
+    width: 100%;
+    margin-top: 20px;
 }
 
 }
