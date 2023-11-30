@@ -1,22 +1,22 @@
-### Título: Por un Chile más limpio
+# Título: Por un Chile más limpio
 
 ## Análisis
-# A lo largo de nuestro país, existen muchos sitios utilizados como vertederos ilegales, ocupando territorio de la comunidad con fines clandestinos y que causan un daño al medioambiente y a la dignidad de los vecinos. La acumulación de residuos en tales sitios genera un impacto ambiental con múltiples aristas: contaminación del agua subterránea, daño a la fertilidad del suelo, generación de gases contaminantes, destrucción de ecosistemas, riesgos sanitarios para quienes viven cerca, entre otros tantos efectos preocupantes.
-# Ante la existencia de esta problemática, el propósito de nuestro sitio es informar y generar conciencia, explicando cómo reutilizar y entregando tips verdes. Por un Chile más limpio, aunque nace como proyecto informativo, tiene la finalidad de generar comunidad permitiendo instancias de participación. Juntos, queremos organizar y participar en campañas de reciclaje y recolección de basura, además de acercar las problemáticas de los vecinos a las diversas instituciones y autoridades encargadas de velar por el bien común. No podemos permitir que contaminen nuestro entorno.
+### A lo largo de nuestro país, existen muchos sitios utilizados como vertederos ilegales, ocupando territorio de la comunidad con fines clandestinos y que causan un daño al medioambiente y a la dignidad de los vecinos. La acumulación de residuos en tales sitios genera un impacto ambiental con múltiples aristas: contaminación del agua subterránea, daño a la fertilidad del suelo, generación de gases contaminantes, destrucción de ecosistemas, riesgos sanitarios para quienes viven cerca, entre otros tantos efectos preocupantes.
+### Ante la existencia de esta problemática, el propósito de nuestro sitio es informar y generar conciencia, explicando cómo reutilizar y entregando tips verdes. Por un Chile más limpio, aunque nace como proyecto informativo, tiene la finalidad de generar comunidad permitiendo instancias de participación. Juntos, queremos organizar y participar en campañas de reciclaje y recolección de basura, además de acercar las problemáticas de los vecinos a las diversas instituciones y autoridades encargadas de velar por el bien común. No podemos permitir que contaminen nuestro entorno.
 
 ## Pregunta de investigación: 
 
-# ¿Cuál es el impacto que tienen los vertederos ilegales dentro de un barrio y una comunidad?
+### ¿Cuál es el impacto que tienen los vertederos ilegales dentro de un barrio y una comunidad?
 
-# ¿Por qué se producen los vertederos ilegales? 
+### ¿Por qué se producen los vertederos ilegales? 
 
-# ¿Qué tipos de comportamientos humanos podrían ayudar a disminuir los vertederos ilegales?
+### ¿Qué tipos de comportamientos humanos podrían ayudar a disminuir los vertederos ilegales?
 
-# ¿De qué manera se puede disminuir la cantidad de residuos que produce una persona?
+### ¿De qué manera se puede disminuir la cantidad de residuos que produce una persona?
 
 
 ## Hipótesis: 
 
-# Hipótesis 1: El excesivo aumento de los residuos podría ser la causa de que cada vez sean más los sitios utilizados como vertederos ilegales en la Región Metropolitana.
+### Hipótesis 1: El excesivo aumento de los residuos podría ser la causa de que cada vez sean más los sitios utilizados como vertederos ilegales en la Región Metropolitana.
 
-# Hipótesis 2: Disminuir nuestros residuos podría ayudar de forma directa a minimizar el impacto que estos tienen en el medio ambiente y en la comunidad que habitamos.
+### Hipótesis 2: Disminuir nuestros residuos podría ayudar de forma directa a minimizar el impacto que estos tienen en el medio ambiente y en la comunidad que habitamos.
