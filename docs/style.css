@@ -1,46 +1,26 @@
-/* styles.css */
-
 body {
     background-color: white;
-    color: black;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    color: #333; /* Color de texto predeterminado */
+    font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    background-color: lightgreen;
-    padding: 10px;
-    text-align: center;
+header, section {
+    margin: 20px;
 }
 
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    border-top: 2px solid lightgray;
+    padding-top: 20px;
 }
 
-h1 {
-    color: green;
-}
-
-h2 {
-    border-bottom: 2px solid green;
-    padding-bottom: 5px;
-    margin-top: 20px;
-}
-
-p {
-    line-height: 1.5;
-}
-
-footer {
-    background-color: green;
+button {
+    background-color: lightgreen;
     color: white;
-    text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-image: url('grafico.png'); /* Reemplaza 'grafico.png' con la ruta correcta a tu imagen */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
 }
