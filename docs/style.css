@@ -1,15 +1,13 @@
-/* styles.css */
-
 body {
-    background-color: white;
-    color: black;
+    background-color: #ffffff; /* Blanco */
+    color: #008000; /* Verde oscuro */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: lightgreen;
+    background-color: #c0ffc0; /* Verde claro */
     padding: 10px;
     text-align: center;
 }
@@ -21,11 +19,11 @@ section {
 }
 
 h1 {
-    color: green;
+    color: #008000; /* Verde oscuro */
 }
 
 h2 {
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #008000; /* Verde oscuro */
     padding-bottom: 5px;
     margin-top: 20px;
 }
@@ -34,9 +32,13 @@ p {
     line-height: 1.5;
 }
 
+/* Pie de página */
 footer {
-    background-color: green;
-    color: white;
+    background-color: #008000; /* Verde oscuro */
+    color: #ffffff; /* Blanco */
     text-align: center;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
