@@ -13,13 +13,17 @@ header {
 }
 
 .site-isotipo {
-    width: 100px; /* Ajusta el tamaño según tus preferencias */
-    margin-right: 20px; /* Espacio entre el isotipo y el título */
+    max-width: 150px; /* Ajusta el tamaño máximo del isotipo según tus preferencias */
+    height: auto;
 }
 
-img {
-    width: 100%; /* Ajuste para hacer la imagen responsiva */
+/* Nuevos estilos para el banner */
+.banner {
+    width: 100%;
     height: auto;
+    cursor: pointer;
+}
+
 }
 
 nav {
