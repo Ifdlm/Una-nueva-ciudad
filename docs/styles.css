@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arsenal', sans-serif; /* Cambio de tipografía */
 }
 
 header {
-    background-color: darkgreen;
+    background-color: #074434; /* Cambio de color de fondo */
     text-align: center;
     padding: 20px;
     display: flex;
@@ -32,6 +32,7 @@ nav ul {
 
 nav li {
     margin-right: 20px;
+    position: relative; /* Añadido para alinear la línea vertical */
 }
 
 nav a {
@@ -43,6 +44,16 @@ nav a {
 
 nav a:hover {
     color: lightgreen;
+}
+
+nav li::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    right: 0;
+    top: 0;
 }
 
 /* Resto de estilos ... */
