@@ -52,10 +52,11 @@ header {
     position: relative;
     width: 100%;
     cursor: pointer;
+    text-align: center; /* Centra la imagen horizontalmente */
 }
 
 .banner-container img {
-    width: 100%;
+    max-width: 100%; /* Ajusta el tamaño máximo según el ancho de la pantalla */
     height: auto;
 }
 
