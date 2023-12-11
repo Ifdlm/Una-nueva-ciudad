@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: darkgreen;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del header */
+    justify-content: center; /* Centra horizontalmente el contenido del header */
+}
+
+h1 {
+    margin: 0;
+    color: greenyellow;
+    margin-left: 10px; /* Espacio entre el isotipo y el título */
+}
+
+.site-isotipo {
+    width: 50px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.green-bg {
+    background-color: darkgreen;
+}
+
+.white-bg {
+    background-color: white;
+    color: darkgreen;
+}
+
+.green-text {
+    color: darkgreen;
+}
+
+.white-text {
+    color: white;
+}
+
+#color-btn {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#color-btn:hover {
+    background-color: white;
+    color: darkgreen;
+}
+
+.site-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Datos para el gráfico de torta
+    var data = {
+        labels: ['Terrenos Públicos', 'Terrenos Privados', 'No Declarados'],
+        datasets: [{
+            data: [35, 42, 23],
+            backgroundColor: ['#5cb85c', '#4cae4c', '#5bc0de'], // Paleta de colores verdes
+        }]
+    };
+
+    // Configuración del gráfico
+    var options = {
+        responsive: true,
+        maintainAspectRatio: false,
+    };
+
+    // Obtener el contexto del lienzo
+    var ctx = document.getElementById('pieChart').getContext('2d');
+
+    // Crear el gráfico de torta
+    var myPieChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: options
+    });
+});
