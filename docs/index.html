@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- ... (código anterior) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por un Chile + Limpio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Isotipo con dimensiones controladas -->
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9vErjWD71QQi062SaDyCmul2pNFyi4lqw9RrrrxZAx02paNoaYGlxfkvTj0L2tbxQSdEaxJWDX3VycecD7OnZVorQgseycppiwGAJEjYwwNtcGRV5Q879jT0QoDtStpqMd3Q6cO1IOwhCLPbuvRkWlt2D-M3JM1pxcml1DHPhmHUMbQ1LunkkHYp136k/s320/POR_UN_CHILE__1_-removebg-preview.png" alt="Título de la página" class="site-isotipo">
+    <header style="background-color: #074434;">
+        <!-- Isotipo en bloque con fondo -->
+        <div class="logo-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" alt="Logo" class="site-logo">
+        </div>
 
         <!-- Nuevo botón de menú -->
         <div class="menu-icon" onclick="toggleMenu()">
@@ -28,49 +34,39 @@
         </nav>
     </header>
 
-    <!-- Banner con dimensiones controladas -->
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgloZdKv2zqXp1wfPTD3p3biKUPP-wxcWUmQmiDNVB_4teoIWTnrkaVuZK20ImrH3bDemB1eDDAnEsfhrl-7G1vJHT7H7Tm0jm1-JWpgMyrcqp2cZUwCUfIW3Q4PbH7fwdp0CcdlRHH_t8ofnPdptEL9TCLVv05imRsHbOzSDpwJuvku_R7ytGODhtQNnM/s1920/Banner.png" alt="Banner" class="banner">
-    <!-- Contenido de la página -->
-    <section id="que-pasa" class="green-bg">
-        <h2 class="white-text">¿Qué está pasando?</h2>
-        <p class="white-text">A lo largo de nuestro país, existen muchos sitios utilizados como vertederos ilegales, ocupando territorio de la comunidad con fines clandestinos y que causan un daño al medioambiente y a la dignidad de los vecinos. La acumulación de residuos en tales sitios genera un impacto ambiental con múltiples aristas: contaminación del agua subterránea, daño a la fertilidad del suelo, generación de gases contaminantes, destrucción de ecosistemas, riesgos sanitarios para quienes viven cerca, entre otros tantos efectos preocupantes.
-            Ante la existencia de esta problemática, el propósito de nuestro sitio es informar y generar conciencia, explicando cómo reutilizar y entregando tips verdes.
-            Por un Chile más limpio, aunque nace como proyecto informativo, tiene la finalidad de generar comunidad permitiendo instancias de participación. Juntos, queremos organizar y participar en campañas de reciclaje y recolección de basura, además de acercar las problemáticas de los vecinos a las diversas instituciones y autoridades encargadas de velar por el bien común. No podemos permitir que contaminen nuestro entorno. 
-            </p>
-        <!-- Agrega más contenido según sea necesario -->
-    </section>
+    <!-- Banner interactivo -->
+    <div class="banner-container" onclick="showWelcomeMessage()">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiplmcS5tDnZe5tYF_TDVOyT-1QXTpA6SnorPI8bc9Lvy3h7crOB-FTRfzmvJHWeHzAh-XgmaXoNUIGEpw1YxrOaa58iLqpv6PZ2lQuRqyurfI8olFsnYehY7jwGKlhlh2Oo32ws9dYxga5Tj_O8Kad4sg3UIQ7KVRg0BcrmY4GO_alNFW_Vc0E7Q8NDyE/w460-h230/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(1).png" alt="Banner" class="banner">
+    </div>
 
-    <section id="situacion-pais" class="white-bg">
-        <h2 class="green-text">La situación a nivel país</h2>
-        <p class="green-text">¿Cuántas toneladas de basura se acumulan en nuestro país? Según información del Ministerio del Medioambiente de Chile, En 2019, se generaron cerca de 20 millones de toneladas de residuos en nuestro país. El 96,9% equivale a residuos no peligrosos y el 3,1% a residuos peligrosos. Los residuos no peligrosos, contemplan residuos de origen industrial (55,6%), residuos sólidos municipales (39,9%) y lodos provenientes de Plantas de Tratamiento de Aguas Servidas (1,4%). Del total de residuos no peligrosos generados, el 79% fue eliminado y el 21% valorizado. Los residuos son eliminados principalmente en rellenos sanitarios y vertederos. Si bien los rellenos sanitarios son instalaciones que cumplen las exigencias sanitarias y ambientales, los países cada vez se enfrentan a más desafíos en la gestión de sus residuos, debiendo potenciar la prevención y la valorización, donde todo residuo potencialmente valorizable deberá ser destinado a tal fin evitando su eliminación.</p>
-        <!-- Agrega más contenido según sea necesario -->
-    </section>
+    <!-- Contenido de las secciones -->
+    <div class="section" style="background-color: #FFF6E7; color: #074434;">
+        <h2>¿Qué está pasando?</h2>
+        <!-- Contenido de la sección -->
+    </div>
 
-    <section id="que-podemos-hacer" class="green-bg">
-        <h2 class="white-text">¿Qué podemos hacer? ¿Se está haciendo algo?</h2>
-        <p class="white-text">El Sistema de Información Ambiental de Chile, ente perteneciente al Ministerio de Medioambiente, informó que existen importantes avances previos en materia de sistemas de información de residuos. Entre ellos se encuentran el Sistema de Declaración y Seguimiento de Residuos Peligrosos desde el 2005 (SIDREP), el Sistema Nacional de Declaración de Residuos (SINADER) desde el 2013 (para generadores y destinatarios que generen residuos no peligrosos sobre 12 toneladas al año, incluyendo la declaración obligatoria de las municipalidades) y desde el 2014 se incorpora la declaración sobre el Manejo de Lodos Generados en Plantas de Tratamiento de Aguas Servidas.
-            Al mismo tiempo, en Por un Chile más Limpio, creemos que en la iniciativa ciudadana y en la capacidad de la colaboración para resolver esta situación. Si bien las capacidades son más limitadas que un ente con más recursos como el estado, la ciudadanía organizada puede presionar para acelerar gestiones de limpieza. Las juntas de vecino deben abordar estos temas y no considerarlo una materia secundaria, ya que vivir en un entorno sucio es perjudicial para su salud y dignidad humana. 
-            La educación es otro elemento clave. No podemos permitir que las próximas generaciones normalicen el botar basura en la calle. En Por un Chile más Limpio estamos trabajando por fomentar talleres educativos en Colegios, municipios, además, de realizar jornadas ciudadanas de limpieza a los barrios para ver el valor de vivir en un lugar limpio y que el esfuerzo que eso implica debe cuidarse. 
-            </p>
-        <!-- Agrega más contenido según sea necesario -->
-    </section>
+    <div class="section" style="background-color: #074434; color: #FFF6E7;">
+        <h2>La situación a nivel país</h2>
+        <!-- Contenido de la sección -->
+    </div>
 
-    <section id="campanas" class="white-bg">
-        <h2 class="green-text">Campañas</h2>
-        <p class="green-text">Contenido de la sección "Campañas".</p>
-        <!-- Agrega más contenido según sea necesario -->
-    </section>
+    <div class="section" style="background-color: #FFF6E7; color: #074434;">
+        <h2>¿Qué podemos hacer?</h2>
+        <!-- Contenido de la sección -->
+    </div>
 
-    <section id="contacto" class="green-bg">
-        <h2 class="white-text">Contacto</h2>
-        <p class="white-text">Contenido de la sección "Contacto".</p>
-        <!-- Agrega más contenido según sea necesario -->
-    </section>
-
-    <!-- Agrega más secciones según sea necesario -->
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer style="background-color: #074434;">
+        <!-- Logo en el footer -->
+        <div class="footer-logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" alt="Logo" class="footer-logo">
+        </div>
+        
+        <!-- Texto en el footer -->
+        <p class="footer-text">Proyecto para el ramo Narración Gráfica de No Ficción de la malla de Periodismo en Pontificia Universidad Católica de Chile. Integrantes: Angel Olmedo, Javier Muñoz Díaz e Ignacio Flores De la Maza. Proyecto: X un Chile + Limpio.</p>
+        
+        <!-- Botón del canal de YouTube -->
+        <button class="youtube-button" onclick="visitYouTube()">Visita nuestro canal de YouTube</button>
+    </footer>
 </body>
 </html>
-
