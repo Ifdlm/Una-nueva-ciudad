@@ -1,40 +1,45 @@
-/* Estilos generales */
 body {
     margin: 0;
     font-family: 'Arsenal', sans-serif;
 }
 
-/* Estilos del header */
 header {
-    background-color: #074434;
-    color: #FFF6E7;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-container img {
-    max-width: 100%;
+    width: 120px; /* Ajusta el ancho según tu preferencia */
     height: auto;
 }
 
 .menu-icon {
-    display: none;
-    cursor: pointer;
     font-size: 20px;
-    margin-right: 10px;
+    color: #FFF6E7;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: none;
+    background-color: #074434;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .nav-list ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
-}
-
-.nav-list li {
-    margin-right: 20px;
+    justify-content: space-around;
 }
 
 .nav-list a {
@@ -43,51 +48,50 @@ header {
     font-weight: bold;
 }
 
-/* Estilos del banner */
 .banner-container {
+    position: relative;
+    width: 100%;
     cursor: pointer;
 }
 
-.banner {
+.banner-container img {
     width: 100%;
     height: auto;
 }
 
-/* Estilos de las secciones */
 .section {
     padding: 20px;
     text-align: center;
 }
 
-/* Estilos del footer */
-footer {
+.footer {
     background-color: #074434;
-    padding: 20px;
-    text-align: center;
     color: #FFF6E7;
-    font-size: 14px;
-    position: relative;
+    text-align: center;
+    padding: 20px;
 }
 
-.footer-logo img {
-    max-width: 80px;
+.footer img {
+    width: 80px; /* Ajusta el tamaño del logo en el footer */
     height: auto;
 }
 
-.footer-text {
-    font-size: 12px;
-    margin: 10px 0;
-}
-
 .youtube-button {
-    padding: 10px;
     background-color: #FFF6E7;
     color: #074434;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-weight: bold;
     margin-top: 10px;
 }
+
+/* Agregamos un efecto hover al botón */
+.youtube-button:hover {
+    background-color: #074434;
+    color: #FFF6E7;
+}
+
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
