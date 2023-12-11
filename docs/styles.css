@@ -4,12 +4,9 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #074434;
+    color: #FFF6E7;
     padding: 10px 20px;
-    position: fixed;
-    width: 100%;
     z-index: 1000;
 }
 
@@ -25,13 +22,10 @@ header {
 }
 
 .nav-list {
-    display: none;
     background-color: #074434;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
 }
 
 .nav-list ul {
@@ -40,6 +34,7 @@ header {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    width: 100%; /* Ajusta el ancho al 100% */
 }
 
 .nav-list a {
@@ -52,11 +47,11 @@ header {
     position: relative;
     width: 100%;
     cursor: pointer;
-    text-align: center; /* Centra la imagen horizontalmente */
+    text-align: center;
 }
 
 .banner-container img {
-    max-width: 100%; /* Ajusta el tamaño máximo según el ancho de la pantalla */
+    max-width: 100%;
     height: auto;
 }
 
@@ -73,7 +68,7 @@ header {
 }
 
 .footer img {
-    width: 80px; /* Ajusta el tamaño del logo en el footer */
+    width: 80px;
     height: auto;
 }
 
@@ -92,9 +87,3 @@ header {
     background-color: #074434;
     color: #FFF6E7;
 }
-
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    .nav-list {
-        display:
