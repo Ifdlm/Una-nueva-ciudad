@@ -62,7 +62,7 @@ header {
 }
 
 .footer {
-    background-color: #074434;
+    background-color: #074434; /* Corregido el color de fondo */
     color: #FFF6E7;
     text-align: center;
     padding: 20px;
