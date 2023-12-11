@@ -2,8 +2,12 @@ function changeSiteColor() {
     var body = document.body;
     var header = document.querySelector('header');
 
-    document.getElementById('imagenDebajoHeader').addEventListener('click', function() {
-        alert("Por un Chile más limpio nace como una iniciativa universitaria que busca a través de la información, generar conciencia sobre la problemática de los vertederos ilegales en nuestro país. Revisa nuestro sitio para conocer esta realidad.");
+    document.addEventListener('DOMContentLoaded', function() {
+        var imagenBanner = document.querySelector('.banner');
+    
+        imagenBanner.addEventListener('click', function() {
+            alert("Por un Chile más limpio nace como una iniciativa universitaria que busca a través de la información, generar conciencia sobre la problemática de los vertederos ilegales en nuestro país. Revisa nuestro sitio para conocer esta realidad.");
+        });
     });
     
 
