@@ -3,70 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Por un Chile + Limpio</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap">
+    <title>Por un Chile más Limpio</title>
 </head>
 <body>
-    <header style="background-color: #074434;">
-        <!-- Isotipo en bloque con fondo -->
+    <header>
         <div class="logo-container">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" alt="Logo" class="site-logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9vErjWD71QQi062SaDyCmul2pNFyi4lqw9RrrrxZAx02paNoaYGlxfkvTj0L2tbxQSdEaxJWDX3VycecD7OnZVorQgseycppiwGAJEjYwwNtcGRV5Q879jT0QoDtStpqMd3Q6cO1IOwhCLPbuvRkWlt2D-M3JM1pxcml1DHPhmHUMbQ1LunkkHYp136k/s320/POR_UN_CHILE__1_-removebg-preview.png" alt="Por un Chile más Limpio">
         </div>
-
-        <!-- Nuevo botón de menú -->
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <!-- Nueva estructura del menú -->
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#que-pasa">¿Qué está pasando?</a></li>
-                <li><a href="#situacion-pais">La situación a nivel país</a></li>
-                <li><a href="#que-podemos-hacer">¿Qué podemos hacer?</a></li>
-                <li><a href="#campanas">Campañas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <!-- Agrega más pestañas según sea necesario -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#section1">¿Qué está pasando?</a></li>
+                <li><a href="#section2">La situación a nivel país</a></li>
+                <li><a href="#section3">¿Qué podemos hacer?</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner interactivo -->
     <div class="banner-container" onclick="showWelcomeMessage()">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiplmcS5tDnZe5tYF_TDVOyT-1QXTpA6SnorPI8bc9Lvy3h7crOB-FTRfzmvJHWeHzAh-XgmaXoNUIGEpw1YxrOaa58iLqpv6PZ2lQuRqyurfI8olFsnYehY7jwGKlhlh2Oo32ws9dYxga5Tj_O8Kad4sg3UIQ7KVRg0BcrmY4GO_alNFW_Vc0E7Q8NDyE/w460-h230/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(1).png" alt="Banner" class="banner">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiplmcS5tDnZe5tYF_TDVOyT-1QXTpA6SnorPI8bc9Lvy3h7crOB-FTRfzmvJHWeHzAh-XgmaXoNUIGEpw1YxrOaa58iLqpv6PZ2lQuRqyurfI8olFsnYehY7jwGKlhlh2Oo32ws9dYxga5Tj_O8Kad4sg3UIQ7KVRg0BcrmY4GO_alNFW_Vc0E7Q8NDyE/w460-h230/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(1).png" alt="Banner">
     </div>
 
-    <!-- Contenido de las secciones -->
-    <div class="section" style="background-color: #FFF6E7; color: #074434;">
+    <div id="section1" class="section" style="background-color: #FFF6E7; color: #074434;">
         <h2>¿Qué está pasando?</h2>
-        <!-- Contenido de la sección -->
+        <p>Texto de prueba para la sección 1. Aquí puedes agregar contenido relevante sobre la problemática de los vertederos ilegales.</p>
     </div>
 
-    <div class="section" style="background-color: #074434; color: #FFF6E7;">
+    <div id="section2" class="section" style="background-color: #074434; color: #FFF6E7;">
         <h2>La situación a nivel país</h2>
-        <!-- Contenido de la sección -->
+        <p>Texto de prueba para la sección 2. Puedes incluir datos y estadísticas sobre la situación de los vertederos a nivel nacional.</p>
     </div>
 
-    <div class="section" style="background-color: #FFF6E7; color: #074434;">
+    <div id="section3" class="section" style="background-color: #FFF6E7; color: #074434;">
         <h2>¿Qué podemos hacer?</h2>
-        <!-- Contenido de la sección -->
+        <p>Texto de prueba para la sección 3. Aquí puedes compartir información sobre acciones y soluciones para abordar el problema de los vertederos ilegales.</p>
     </div>
 
-    <!-- Footer -->
-    <footer style="background-color: #074434;">
-        <!-- Logo en el footer -->
+    <footer>
         <div class="footer-logo">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" alt="Logo" class="footer-logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" alt="Footer Logo">
         </div>
-        
-        <!-- Texto en el footer -->
         <p class="footer-text">Proyecto para el ramo Narración Gráfica de No Ficción de la malla de Periodismo en Pontificia Universidad Católica de Chile. Integrantes: Angel Olmedo, Javier Muñoz Díaz e Ignacio Flores De la Maza. Proyecto: X un Chile + Limpio.</p>
-        
-        <!-- Botón del canal de YouTube -->
         <button class="youtube-button" onclick="visitYouTube()">Visita nuestro canal de YouTube</button>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
