@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arsenal', sans-serif;
+    text-align: left; /* Alinea todo el texto hacia la izquierda */
 }
 
 header {
@@ -11,7 +12,7 @@ header {
 }
 
 .logo-container img {
-    width: 120px; /* Ajusta el ancho según tu preferencia */
+    width: 120px;
     height: auto;
 }
 
@@ -34,7 +35,7 @@ header {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    width: 100%; /* Ajusta el ancho al 100% */
+    width: 100%;
 }
 
 .nav-list a {
@@ -46,23 +47,23 @@ header {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 60vh; /* Ajusta el alto según tu preferencia */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    height: 60vh;
+    overflow: hidden;
 }
 
 .banner-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
+    object-fit: cover;
 }
 
 .section {
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Alinea el texto hacia la izquierda en las secciones */
 }
 
 .footer {
-    background-color: #074434; /* Corregido el color de fondo */
+    background-color: #074434;
     color: #FFF6E7;
     text-align: center;
     padding: 20px;
@@ -83,7 +84,6 @@ header {
     margin-top: 10px;
 }
 
-/* Agregamos un efecto hover al botón */
 .youtube-button:hover {
     background-color: #074434;
     color: #FFF6E7;
