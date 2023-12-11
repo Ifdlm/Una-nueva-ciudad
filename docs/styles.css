@@ -4,28 +4,29 @@ body {
     font-family: 'Arsenal', sans-serif;
 }
 
-/* Estilos del isotipo */
-.logo-container {
+/* Estilos del header */
+header {
+    background-color: #074434;
+    color: #FFF6E7;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-.site-logo {
-    max-width: 100px;
+.logo-container img {
+    max-width: 100%;
     height: auto;
 }
 
-/* Estilos del menú */
 .menu-icon {
     display: none;
     cursor: pointer;
-    color: #FFF6E7;
     font-size: 20px;
     margin-right: 10px;
 }
 
-.nav-list {
+.nav-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -34,6 +35,12 @@ body {
 
 .nav-list li {
     margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #FFF6E7;
+    font-weight: bold;
 }
 
 /* Estilos del banner */
@@ -54,14 +61,12 @@ body {
 
 /* Estilos del footer */
 footer {
+    background-color: #074434;
     padding: 20px;
     text-align: center;
     color: #FFF6E7;
     font-size: 14px;
-}
-
-.footer-logo {
-    margin-bottom: 10px;
+    position: relative;
 }
 
 .footer-logo img {
@@ -81,5 +86,10 @@ footer {
     border: none;
     cursor: pointer;
     font-size: 14px;
+    margin-top: 10px;
 }
 
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        display:
