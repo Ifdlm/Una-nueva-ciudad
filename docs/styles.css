@@ -1,46 +1,32 @@
+/* Estilos generales */
 body {
     margin: 0;
-    font-family: 'Arsenal', sans-serif; /* Cambio de tipografía */
+    font-family: 'Arsenal', sans-serif;
 }
 
-header {
-    background-color: #074434; /* Cambio de color de fondo */
-    text-align: center;
-    padding: 20px;
+/* Estilos del isotipo */
+.logo-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    padding: 10px;
 }
 
-.site-isotipo {
-    max-width: 150px; /* Ajusta el tamaño máximo del isotipo según tus preferencias */
+.site-logo {
+    max-width: 100px;
     height: auto;
 }
 
-/* Nuevos estilos para el banner */
-.banner {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
+/* Estilos del menú */
 .menu-icon {
-    display: none; /* Oculta el icono del menú en pantallas grandes */
-    font-size: 20px;
+    display: none;
     cursor: pointer;
-    color: white;
+    color: #FFF6E7;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 .nav-list {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -48,51 +34,52 @@ nav {
 
 .nav-list li {
     margin-right: 20px;
-    position: relative;
 }
 
-.nav-list a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    padding-right: 10px; /* Espacio entre el texto y la línea vertical */
+/* Estilos del banner */
+.banner-container {
+    cursor: pointer;
 }
 
-.nav-list a:hover {
-    color: lightgreen;
+.banner {
+    width: 100%;
+    height: auto;
 }
 
-.nav-list li::after {
-    content: '';
-    position: absolute;
-    height: 70%;
-    width: 1px;
-    background-color: white;
-    right: 0;
-    top: 15%;
+/* Estilos de las secciones */
+.section {
+    padding: 20px;
+    text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #074434;
-    }
-
-    .nav-list.show {
-        display: flex;
-    }
-
-    .nav-list li {
-        margin-right: 0;
-    }
-
-    .menu-icon {
-        display: block;
-    }
+/* Estilos del footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #FFF6E7;
+    font-size: 14px;
 }
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+.footer-text {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.youtube-button {
+    padding: 10px;
+    background-color: #FFF6E7;
+    color: #074434;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
