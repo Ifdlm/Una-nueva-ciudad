@@ -46,13 +46,14 @@ header {
 .banner-container {
     position: relative;
     width: 100%;
-    cursor: pointer;
-    text-align: center;
+    height: 100vh; /* Ajusta el alto al 100% de la ventana */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
 .banner-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
 }
 
 .section {
