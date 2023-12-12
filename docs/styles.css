@@ -88,3 +88,13 @@ header {
     background-color: #074434;
     color: #FFF6E7;
 }
+.slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px; /* Espacio entre las imágenes (ajusta según tus necesidades) */
+  }
