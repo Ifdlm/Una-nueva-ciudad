@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap">
     <title>Por un Chile más Limpio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -68,7 +68,58 @@
         <p>Según datos publicados por la Dirección de Aseo, Ornato y Gestión Ambiental (DAOGA) de la Municipalidad de Maipú, existen más de  50 lugares en la comuna en los que, por diversos motivos, se acumula basura de manera ilegal, lo que genera focos de infección, aumento de insectos en el sector, y no está de más mencionar los malos olores que estos generan. Habitualmente estos microbasurales se generan en pequeñas esquinas o terrenos del espacio público. Y están formados por residuos que provienen principalmente de la población civil, como lo son la ropa, los electrodomésticos, muebles, juguetes o artefactos en mal estado, entre otros.</p>
         <p>En total, existen 3.735 sitios de disposición final ilegal de residuos (RCD y otros residuos sólidos domésticos en su mayoría a nivel nacional. Dentro de estos 3.735 sitios, el 34,65% (3.492 sitios) son microbasurales (sitios menores a 1Há.), 2,41% (243 sitios) son vertederos ilegales. </p>
         <p>Valorizar los residuos significa optimizar sus características a partir de procesos de reutilización, recuperación y reciclado. También hace referencia a un proceso, a una operación cuyo objetivo es darle al residuo una utilidad. Por ejemplo, la sustitución de otros materiales para realizar una función. </p>
-           
+        
+        <canvas id="miGrafico" width="400" height="400"></canvas>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Datos de evolución de residuos anuales en Chile (en millones de toneladas)
+    const years = [2015, 2016, 2017, 2018, 2019, 2020];
+    const residuosAnuales = [21.1, 21.2, 23, 19.6, 20, 18];
+    const colorLinea = "#FFF6E7";
+
+    // Crear el gráfico de línea
+    var ctx = document.getElementById('miGrafico').getContext('2d');
+    var miGrafico = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: years.map(String),
+            datasets: [{
+                label: 'Residuos Anuales (Millones de Toneladas)',
+                data: residuosAnuales,
+                backgroundColor: colorLinea,
+                borderColor: colorLinea,
+                borderWidth: 2,
+                pointBackgroundColor: colorLinea,
+                pointBorderColor: colorLinea,
+                pointRadius: 5,
+                pointHoverRadius: 8,
+                fill: false
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Evolución de Residuos Anuales en Chile (2015-2020)'
+            },
+            scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Año'
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Millones de Toneladas'
+                    }
+                }]
+            }
+        }
+    });
+});
+</script>
     
     </div>
 
