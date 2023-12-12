@@ -90,13 +90,14 @@ header {
 }
 .slider {
     display: flex;
-    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
-    margin: 0 auto; /* Centra la galería en la página */
-    overflow: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
   
   .slider img {
-    width: 100%;
-    height: auto;
-    margin-right: 10px; /* Espacio entre las imágenes (ajusta según tus necesidades) */
+    width: auto;
+    height: 100%;
+    flex: 0 0 auto;
+    margin-right: 10px;
   }
