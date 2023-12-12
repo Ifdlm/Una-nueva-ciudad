@@ -90,6 +90,8 @@ header {
 }
 .slider {
     display: flex;
+    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra la galería en la página */
     overflow: hidden;
   }
   
