@@ -36,6 +36,49 @@
           </div>
           
         <p>A lo largo de nuestro país, existen muchos sitios utilizados como vertederos ilegales, ocupando territorio de la comunidad con fines clandestinos y que causan un daño al medioambiente y a la dignidad de los vecinos. La acumulación de residuos en tales sitios genera un impacto ambiental con múltiples aristas: contaminación del agua subterránea, daño a la fertilidad del suelo, generación de gases contaminantes, destrucción de ecosistemas, riesgos sanitarios para quienes viven cerca, entre otros tantos efectos preocupantes.</p>
+       <!-- Contenedor donde se mostrará el gráfico -->
+<div class="container mt-5">
+    <div id="bar-chart"></div>
+</div>
+
+<!-- Scripts necesarios para mostrar el gráfico -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Código JavaScript para cargar y mostrar el gráfico -->
+<script>
+// Datos del gráfico
+var comunas = ["Maipú", "Puente Alto", "Quilicura", "Lampa", "Cerro Navia", "Pudahuel", "Las Condes", "Lo Barnechea"];
+var vertederos = [8, 6, 9, 8, 2, 11, 0, 0];
+
+// Crear el gráfico de barras
+var trace = {
+    x: vertederos,
+    y: comunas,
+    type: 'bar',
+    orientation: 'h',
+    marker: {
+        color: '#074434'
+    }
+};
+
+var layout = {
+    title: 'Vertederos ilegales por comuna en la Región Metropolitana',
+    xaxis: {
+        title: 'N° de vertederos ilegales'
+    },
+    yaxis: {
+        title: 'Comunas'
+    }
+};
+
+var data = [trace];
+
+// Mostrar el gráfico en el contenedor especificado
+Plotly.newPlot('bar-chart', data, layout);
+</script>
+
         <p>Ante la existencia de esta problemática, el propósito de nuestro sitio es informar y generar conciencia, explicando cómo reutilizar y entregando tips verdes.</p>
         <p>Por un Chile más limpio, aunque nace como proyecto informativo, tiene la finalidad de generar comunidad permitiendo instancias de participación. Juntos, queremos organizar y participar en campañas de reciclaje y recolección de basura, además de acercar las problemáticas de los vecinos a las diversas instituciones y autoridades encargadas de velar por el bien común. No podemos permitir que contaminen nuestro entorno. </p>
         <h3>El problema</h3>
@@ -46,9 +89,9 @@
             -          Todos los vertederos generan gases contaminantes. La descomposición y fermentación de la materia orgánica genera biogás, una mezcla de gas metano (CH4) y dióxido de carbono (CO2), responsable del calentamiento global. En los vertederos ilegales, a un mayor número de gases hay que añadir los malos olores que producen.
             -          Una mala gestión de la basura degrada el suelo y el paisaje, además de contaminar acuíferos y aguas superficiales. La contaminación se produce por el arrastre de materiales pesados como el plomo o el mercurio, presentes en algunos tipos de basura. </p>
       
+        <h3>Diferencia entre vertederos legales e ilegales</h3>
         <iframe width="960" height="540" data-original-width="1920" data-original-height="1080" src="https://www.thinglink.com/view/scene/1790818524592079716" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><script async src="//cdn.thinglink.me/jse/responsive.js"></script>
        
-        <h3>Diferencia entre vertederos legales e ilegales</h3>
         <p>La principal diferencia entre vertederos legales e ilegales es el control de riesgos y efectos negativos en la eliminación de residuos complejos. Aunque las sustancias vertidas en los vertederos no se pueden re-aprovechar, facilitan la degradación de la materia orgánica posibilitando el aprovechamiento, al menos, de los gases generados. También se garantiza la futura reutilización de la zona.</p>
         <p><p>Los vertederos, como estructura, tienen un funcionamiento regulado. Algunas de sus características son:
         </p>Limpieza: Tanto en accesos (caminos), como dentro de las instalaciones para garantizar el acceso de maquinaria, camiones, etc. También disponen de servicios auxiliares como luz, agua corriente, teléfono, etc.
@@ -121,50 +164,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-
-<!-- Contenedor donde se mostrará el gráfico -->
-<div class="container mt-5">
-    <div id="bar-chart"></div>
-</div>
-
-<!-- Scripts necesarios para mostrar el gráfico -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-<!-- Código JavaScript para cargar y mostrar el gráfico -->
-<script>
-// Datos del gráfico
-var comunas = ["Maipú", "Puente Alto", "Quilicura", "Lampa", "Cerro Navia", "Pudahuel", "Las Condes", "Lo Barnechea"];
-var vertederos = [8, 6, 9, 8, 2, 11, 0, 0];
-
-// Crear el gráfico de barras
-var trace = {
-    x: vertederos,
-    y: comunas,
-    type: 'bar',
-    orientation: 'h',
-    marker: {
-        color: '#074434'
-    }
-};
-
-var layout = {
-    title: 'Vertederos ilegales por comuna en la Región Metropolitana',
-    xaxis: {
-        title: 'N° de vertederos ilegales'
-    },
-    yaxis: {
-        title: 'Comunas'
-    }
-};
-
-var data = [trace];
-
-// Mostrar el gráfico en el contenedor especificado
-Plotly.newPlot('bar-chart', data, layout);
-</script>
-
 
     
     </div>
