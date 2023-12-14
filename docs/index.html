@@ -48,16 +48,51 @@
         <p> -          La basura en descomposición atrae a roedores e insectos.</p>
         <p> -          Peligro de combustión y, por lo tanto, de incendios forestales. </p>
         <p> -          Todos los vertederos generan gases contaminantes. La descomposición y fermentación de la materia orgánica genera biogás, una mezcla de gas metano (CH4) y dióxido de carbono (CO2), responsable del calentamiento global. En los vertederos ilegales, a un mayor número de gases hay que añadir los malos olores que producen.</p>
-        <p>>-          Una mala gestión de la basura degrada el suelo y el paisaje, además de contaminar acuíferos y aguas superficiales. La contaminación se produce por el arrastre de materiales pesados como el plomo o el mercurio, presentes en algunos tipos de basura. </p></p
+        <p>>-          Una mala gestión de la basura degrada el suelo y el paisaje, además de contaminar acuíferos y aguas superficiales. La contaminación se produce por el arrastre de materiales pesados como el plomo o el mercurio, presentes en algunos tipos de basura. </p>
       
         <h3>Diferencia entre vertederos legales e ilegales</h3>
+
         <iframe width="960" height="540" data-original-width="1920" data-original-height="1080" src="https://www.thinglink.com/view/scene/1791950970591117989" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><script async src="//cdn.thinglink.me/jse/responsive.js"></script>
        
         <p>La principal diferencia entre vertederos legales e ilegales es el control de riesgos y efectos negativos en la eliminación de residuos complejos. Aunque las sustancias vertidas en los vertederos no se pueden re-aprovechar, facilitan la degradación de la materia orgánica posibilitando el aprovechamiento, al menos, de los gases generados. También se garantiza la futura reutilización de la zona.</p>
         <p><p>Los vertederos, como estructura, tienen un funcionamiento regulado. Algunas de sus características son las que se presentan en la siguiente imagen.
        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiegf2xS02WJYEhHle4CX85YHG7uARDSJXboe1N3S6Wgbwk_5Exwbt0nU9U4TcmpMpVX52mhTHM18Zpzl7EzP8nzslNy9a0G9_mebF0T1ZgH85kr9eImvxitXdf4Dzjb59Mp0LI1PD_2l6a9eWJTC9k-14Tn2cRhpLE32EpbZc3tddf_QuazvNmr4GwYKk=s16000" alt="Verterderos sanos">>
 
- <!-- Crea un contenedor para el gráfico -->
+<!-- Crea un contenedor para el gráfico -->
+<div id="columnChart" style="width: 80%; margin: auto;"></div>
+
+<script>
+// Define los datos para el gráfico de columnas horizontales
+var regiones = ["Arica y Parinacota", "Tarapacá", "Antofagasta", "Atacama", "Coquimbo", "Valparaíso", "Metropolitana", "O’Higgins", "Maule", "Ñuble", "Biobío", "La Araucanía", "Los Ríos", "Los Lagos", "Aysén", "Magallanes y la Antártica Chilena"];
+var eliminacion = [1.00087495, 0.48002237, 1.208359, 0.98932164, 1.04874611, 1.1547222, 1.18286903, 0.82040436, 0.82470801, 0.80400507, 0.89010876, 0.44265617, 0.8107323, 1.11542343, 1.21052448, 1.57863597];
+
+// Crea el gráfico de columnas horizontales
+Highcharts.chart('columnChart', {
+    chart: {
+        type: 'bar',
+        backgroundColor: 'transparent' // Fondo transparente
+    },
+    title: {
+        text: 'Generación de residuos municipales por habitante por región 2020'
+    },
+    xAxis: {
+        categories: regiones
+    },
+    yAxis: {
+        title: {
+            text: 'Eliminación (Kilogramos/habitante/día)'
+        }
+    },
+    series: [{
+        name: 'Eliminación',
+        data: eliminacion,
+        color: "#074434"  // Color verde
+    }]
+});
+</script>
+
+
+ <!-- Crea un contenedor para el gráfico POR REGIONES-->
  <div id="columnChart" style="width: 80%; margin: auto;"></div>
 
  <script>
@@ -342,55 +377,7 @@ Plotly.newPlot('bar-chart', data, layout);
   });
   </script>
 
-    <!-- Crea un contenedor para el gráfico -->
-    <div id="lineChart" style="width: 80%; margin: auto;"></div>
-
-    <script>
-        // Define los datos para el gráfico de línea spline
-        var datosLinea = [
-            { year: 2015, value: 21.1 },
-            { year: 2016, value: 21.2 },
-            { year: 2017, value: 23 },
-            { year: 2018, value: 19.6 },
-            { year: 2019, value: 20 },
-            { year: 2020, value: 18 }
-        ];
-
-        // Crea el gráfico de línea spline
-        Highcharts.chart('lineChart', {
-            chart: {
-                type: 'spline',
-                backgroundColor: 'transparent' // Fondo transparente
-            },
-            title: {
-                text: 'Residuos anuales a nivel nacional 2015-2020'
-            },
-            xAxis: {
-                type: 'category',
-                categories: datosLinea.map(item => item.year),
-                title: {
-                    text: 'Año'
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Millones de Toneladas'
-                }
-            },
-            plotOptions: {
-                spline: {
-                    marker: {
-                        enabled: true
-                    }
-                }
-            },
-            series: [{
-                name: 'Residuos',
-                color: '#074434',
-                data: datosLinea.map(item => item.value)
-            }]
-        });
-    </script>
+   
        
        
     </div>
