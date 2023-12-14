@@ -146,6 +146,58 @@ Plotly.newPlot('bar-chart', data, layout);
         <p>En total, existen 3.735 sitios de disposición final ilegal de residuos (RCD y otros residuos sólidos domésticos en su mayoría a nivel nacional. Dentro de estos 3.735 sitios, el 34,65% (3.492 sitios) son microbasurales (sitios menores a 1Há.), 2,41% (243 sitios) son vertederos ilegales. </p>
         <p>Valorizar los residuos significa optimizar sus características a partir de procesos de reutilización, recuperación y reciclado. También hace referencia a un proceso, a una operación cuyo objetivo es darle al residuo una utilidad. Por ejemplo, la sustitución de otros materiales para realizar una función. </p>
         
+        <!-- Crea un contenedor para el gráfico -->
+    <div id="lineChart" style="width: 80%; margin: auto;"></div>
+
+    <script>
+        // Define los datos para el gráfico de línea spline
+        var datosLinea = [
+            { year: 2015, value: 21.1 },
+            { year: 2016, value: 21.2 },
+            { year: 2017, value: 23 },
+            { year: 2018, value: 19.6 },
+            { year: 2019, value: 20 },
+            { year: 2020, value: 18 }
+        ];
+
+        // Crea el gráfico de línea spline
+        Highcharts.chart('lineChart', {
+            chart: {
+                type: 'spline',
+                backgroundColor: 'transparent' // Fondo transparente
+            },
+            title: {
+                text: 'Residuos anuales a nivel nacional 2015-2020'
+            },
+            xAxis: {
+                type: 'category',
+                categories: datosLinea.map(item => item.year),
+                title: {
+                    text: 'Año'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Millones de Toneladas'
+                }
+            },
+            plotOptions: {
+                spline: {
+                    marker: {
+                        enabled: true
+                    }
+                }
+            },
+            series: [{
+                name: 'Residuos',
+                color: '#074434',
+                data: datosLinea.map(item => item.value)
+            }]
+        });
+    </script>
+       
+       
+       
         <canvas id="miGrafico" width="200" height="200"></canvas>
 
 <script>
