@@ -93,6 +93,181 @@
         <p>Según datos publicados por la Dirección de Aseo, Ornato y Gestión Ambiental (DAOGA) de la Municipalidad de Maipú, existen más de  50 lugares en la comuna en los que, por diversos motivos, se acumula basura de manera ilegal, lo que genera focos de infección, aumento de insectos en el sector, y no está de más mencionar los malos olores que estos generan. Habitualmente estos microbasurales se generan en pequeñas esquinas o terrenos del espacio público. Y están formados por residuos que provienen principalmente de la población civil, como lo son la ropa, los electrodomésticos, muebles, juguetes o artefactos en mal estado, entre otros.</p>
         <p>Valorizar los residuos significa optimizar sus características a partir de procesos de reutilización, recuperación y reciclado. También hace referencia a un proceso, a una operación cuyo objetivo es darle al residuo una utilidad. Por ejemplo, la sustitución de otros materiales para realizar una función. </p>
       
+        Luego la situación país
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Line Chart Spline</title>
+            <!-- Agrega las bibliotecas de Highcharts desde el CDN -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        </head>
+        <body>
+            <!-- Crea un contenedor para el gráfico -->
+            <div id="lineChart" style="width: 80%; margin: auto;"></div>
+        
+            <script>
+                // Define los datos para el gráfico de línea spline
+                var datosLinea = [
+                    { year: 2015, value: 21.1 },
+                    { year: 2016, value: 21.2 },
+                    { year: 2017, value: 23 },
+                    { year: 2018, value: 19.6 },
+                    { year: 2019, value: 20 },
+                    { year: 2020, value: 18 }
+                ];
+        
+                // Crea el gráfico de línea spline
+                Highcharts.chart('lineChart', {
+                    chart: {
+                        type: 'spline',
+                        backgroundColor: 'transparent' // Fondo transparente
+                    },
+                    title: {
+                        text: 'Residuos anuales a nivel nacional 2015-2020'
+                    },
+                    xAxis: {
+                        type: 'category',
+                        categories: datosLinea.map(item => item.year),
+                        title: {
+                            text: 'Año'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Millones de Toneladas'
+                        }
+                    },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                enabled: true
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Residuos',
+                        color: '#074434',
+                        data: datosLinea.map(item => item.value)
+                    }]
+                });
+            </script>
+        </body>
+        </html>
+        
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Column Chart</title>
+            <!-- Agrega las bibliotecas de Highcharts desde el CDN -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        </head>
+        <body>
+            <!-- Crea un contenedor para el gráfico -->
+            <div id="columnChart" style="width: 80%; margin: auto;"></div>
+        
+            <script>
+            // Define los datos para el gráfico de columnas horizontales
+            var regiones = ["Arica y Parinacota", "Tarapacá", "Antofagasta", "Atacama", "Coquimbo", "Valparaíso", "Metropolitana", "O’Higgins", "Maule", "Ñuble", "Biobío", "La Araucanía", "Los Ríos", "Los Lagos", "Aysén", "Magallanes y la Antártica Chilena"];
+            var eliminacion = [1.00087495, 0.48002237, 1.208359, 0.98932164, 1.04874611, 1.1547222, 1.18286903, 0.82040436, 0.82470801, 0.80400507, 0.89010876, 0.44265617, 0.8107323, 1.11542343, 1.21052448, 1.57863597];
+        
+            // Crea el gráfico de columnas horizontales
+            Highcharts.chart('columnChart', {
+                chart: {
+                    type: 'bar',
+                    backgroundColor: 'transparent' // Fondo transparente
+                },
+                title: {
+                    text: 'Generación de residuos municipales por habitante por región 2020'
+                },
+                xAxis: {
+                    categories: regiones
+                },
+                yAxis: {
+                    title: {
+                        text: 'Eliminación (Kilogramos/habitante/día)'
+                    }
+                },
+                series: [{
+                    name: 'Eliminación',
+                    data: eliminacion,
+                    color: "#074434"  // Color verde
+                }]
+            });
+            </script>
+        </body>
+        </html>
+        
+        
+        <P>Como se pudo ver, la Región Metropolitana es la que más residuos genera a nivel país. Lo cual puede parecer obvio si se considera la supremacía de población que tiene frente al resto de las regiones. No obstante, esto también significa mayores desafíos para controlar los residuos que terminan en vertederos ilegales o microbasurales. </P>
+        
+       <H2> ¿Qué es lo que botamos los chilenos?</H2>
+        
+        <p>El Ministerio del Medioambiente estudió cuáles son los principales desechos que los chilenos botan diariamente en sus hogares.</p>
+        
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Gráfico de Pie</title>
+            <!-- Agrega las bibliotecas de Highcharts desde el CDN -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        </head>
+        <body>
+            <!-- Crea un contenedor para el gráfico -->
+            <div id="pieChart" style="width: 80%; margin: auto;"></div>
+        
+            <script>
+            // Define los datos para el gráfico de pie
+            var datosPie = [
+                { name: 'Industria Envases y embalajes', y: 39.1 },
+                { name: 'Residuos orgánicos', y: 16.7 },
+                { name: 'Residuos no reciclables (relleno sanitario)', y: 16.0 }
+            ];
+        
+            // Define los colores
+            var colores = ["#074434", "#FFF6E7", "#87CEEB"];  // Verde, crema, celeste
+        
+            // Crea el gráfico de pie
+            Highcharts.chart('pieChart', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'transparent'  // Fondo transparente
+                },
+                title: {
+                    text: 'Bolsa de basura promedio de los hogares en Chile'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Porcentaje',
+                    colorByPoint: true,
+                    data: datosPie,
+                    colors: colores
+                }]
+            });
+            </script>
+        
+
         <h3>Diferencia entre vertederos legales e ilegales</h3>
 
         <iframe width="960" height="540" data-original-width="1920" data-original-height="1080" src="https://www.thinglink.com/view/scene/1791950970591117989" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><script async src="//cdn.thinglink.me/jse/responsive.js"></script>
