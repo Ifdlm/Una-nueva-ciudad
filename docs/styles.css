@@ -62,31 +62,36 @@ header {
     text-align: left; /* Alinea el texto hacia la izquierda en las secciones */
 }
 
-.footer {
-    background-color: #074434;
-    color: #FFF6E7;
+#footer {
     text-align: center;
     padding: 20px;
 }
 
-.footer img {
-    width: 80px;
-    height: auto;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.footer-text {
+    font-size: small;
+    margin: 10px 0;
 }
 
 .youtube-button {
     background-color: #FFF6E7;
     color: #074434;
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
+    font-size: small;
     margin-top: 10px;
 }
-
-.youtube-button:hover {
-    background-color: #074434;
-    color: #FFF6E7;
+</style>
 }
 .slider {
     display: flex;
