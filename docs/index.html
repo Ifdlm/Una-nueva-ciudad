@@ -92,6 +92,40 @@
     // Mostrar el gráfico en el contenedor especificado
     Plotly.newPlot('bar-chart', data, layout);
     </script>
+
+ <!-- Crea un contenedor para el gráfico -->
+ <div id="columnChart" style="width: 80%; margin: auto;"></div>
+
+ <script>
+ // Define los datos para el gráfico de columnas horizontales
+ var regiones = ["Arica y Parinacota", "Tarapacá", "Antofagasta", "Atacama", "Coquimbo", "Valparaíso", "Metropolitana", "O’Higgins", "Maule", "Ñuble", "Biobío", "La Araucanía", "Los Ríos", "Los Lagos", "Aysén", "Magallanes y la Antártica Chilena"];
+ var eliminacion = [1.00087495, 0.48002237, 1.208359, 0.98932164, 1.04874611, 1.1547222, 1.18286903, 0.82040436, 0.82470801, 0.80400507, 0.89010876, 0.44265617, 0.8107323, 1.11542343, 1.21052448, 1.57863597];
+
+ // Crea el gráfico de columnas horizontales
+ Highcharts.chart('columnChart', {
+     chart: {
+         type: 'bar'
+     },
+     title: {
+         text: 'Generación de residuos municipales por habitante por región 2020'
+     },
+     xAxis: {
+         categories: regiones
+     },
+     yAxis: {
+         title: {
+             text: 'Eliminación (Kilogramos/habitante/día)'
+         }
+     },
+     series: [{
+         name: 'Eliminación',
+         data: eliminacion,
+         color: "#074434"  // Color verde
+     }]
+ });
+ </script>
+
+
     </div>
 
     <div id="section2" class="section" style="background-color: #074434; color: #FFF6E7;">
