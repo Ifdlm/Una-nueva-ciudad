@@ -8,6 +8,9 @@
     <title>Por un Chile más Limpio</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
 </head>
 <body>
     <header>
@@ -247,6 +250,42 @@ var data = [trace_2020, trace_2019];
 Plotly.newPlot('bar-chart', data, layout);
 </script>
 
+ <!-- Crea un contenedor para el gráfico -->
+ <div id="pieChart" style="width: 80%; margin: auto;"></div>
+
+ <script>
+ // Define los datos para el gráfico de pie
+ var datosPie = [
+     { name: 'Industria manufacturera', y: 39.1, color: '#074434' },
+     { name: 'Suministro de electricidad, gas y agua', y: 16.7, color: '#FFF6E7' },
+     { name: 'Actividades inmobiliarias, empresariales y de alquiler', y: 15.7, color: '#FF0000' }  // Cambiado a rojo
+ ];
+
+ // Crea el gráfico de pie
+ Highcharts.chart('pieChart', {
+     chart: {
+         type: 'pie'
+     },
+     title: {
+         text: 'Sectores productivos que más residuos generan'
+     },
+     plotOptions: {
+         pie: {
+             allowPointSelect: true,
+             cursor: 'pointer',
+             dataLabels: {
+                 enabled: true,
+                 format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+             }
+         }
+     },
+     series: [{
+         name: 'Porcentaje',
+         colorByPoint: true,
+         data: datosPie
+     }]
+ });
+ </script>
     
     </div>
 
