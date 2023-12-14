@@ -8,6 +8,9 @@
     <title>Por un Chile más Limpio</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
     
 </head>
 <body>
@@ -51,6 +54,45 @@
        
         <p>La principal diferencia entre vertederos legales e ilegales es el control de riesgos y efectos negativos en la eliminación de residuos complejos. Aunque las sustancias vertidas en los vertederos no se pueden re-aprovechar, facilitan la degradación de la materia orgánica posibilitando el aprovechamiento, al menos, de los gases generados. También se garantiza la futura reutilización de la zona.</p>
         <p>En total, existen 3.735 sitios de disposición final ilegal de residuos (RCD y otros residuos sólidos domésticos en su mayoría a nivel nacional. Dentro de estos 3.735 sitios, el 34,65% (3.492 sitios) son microbasurales (sitios menores a 1Há.), 2,41% (243 sitios) son vertederos ilegales. </p>
+        <p></p>
+         <!-- Crea un contenedor para el gráfico -->
+    <div id="pieChart" style="width: 80%; margin: auto;"></div>
+
+    <script>
+    // Define los datos para el gráfico de pie
+    var datosPie = [
+        { name: 'Industria manufacturera', y: 39.1, color: '#074434' },
+        { name: 'Suministro de electricidad, gas y agua', y: 16.7, color: '#FFF6E7' },
+        { name: 'Actividades inmobiliarias, empresariales y de alquiler', y: 15.7, color: '#FF0000' }  // Cambiado a rojo
+    ];
+
+    // Crea el gráfico de pie
+    Highcharts.chart('pieChart', {
+        chart: {
+            type: 'pie',
+            backgroundColor: 'transparent'  // Fondo transparente
+        },
+        title: {
+            text: 'Sectores productivos que más residuos generan'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            name: 'Porcentaje',
+            colorByPoint: true,
+            data: datosPie
+        }]
+    });
+    </script>
+    
         <p>Los vertederos, como estructura, tienen un funcionamiento regulado. Algunas de sus características son las que se presentan en la siguiente imagen.<p>
             <P></P>
        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiegf2xS02WJYEhHle4CX85YHG7uARDSJXboe1N3S6Wgbwk_5Exwbt0nU9U4TcmpMpVX52mhTHM18Zpzl7EzP8nzslNy9a0G9_mebF0T1ZgH85kr9eImvxitXdf4Dzjb59Mp0LI1PD_2l6a9eWJTC9k-14Tn2cRhpLE32EpbZc3tddf_QuazvNmr4GwYKk=s16000" alt="Verterderos sanos">
