@@ -288,6 +288,41 @@
 <p>A lo largo y ancho de la RM, muchos de los vertederos ilegales se encuentran en comunas de bajo nivel socioeconómico o periféricas. Lamentablemente, quienes viven cerca de estos sectores, no han sentido esta situación como una problemática, muchos de ellos han crecido en ese entorno vulnerable en el que se desecha la basura de manera ilegal e incluso, hasta pueden llegar a formar parte de este mal hábito botando sus propios desechos en esquinas o calles utilizadas para estos fines. </p>
 <p>Esto nos permite detectar varias problemáticas, entre ellas, que las autoridades no están llegando a todos los sectores a limpiar la basura y que falta un problema de educación y cultura. Si lo llevamos a sectores que no tienen basurales, como Vitacura o Lo Barnechea, los vecinos no permitirían que ocurra algo así y apenas se dé un indicio de basurales harían lo posible por acabar con eso.Por qué se permite esta situación en otros sectores, por qué no les llama la atención.</p>
 
+<!-- Crea un contenedor para el gráfico -->
+<div id="columnChart" style="width: 80%; margin: auto;"></div>
+
+<script>
+// Define los datos para el gráfico de columnas
+var comunas = ["Maipú", "Puente Alto", "Quilicura", "Lampa", "Cerro Navia", "Pudahuel", "Las Condes", "Lo Barnechea"];
+var vertederos = [8, 6, 9, 8, 2, 11, 0, 0];
+
+// Crea el gráfico de columnas
+Highcharts.chart('columnChart', {
+    chart: {
+        type: 'column',
+        backgroundColor: 'transparent'  // Fondo transparente
+    },
+    title: {
+        text: 'Vertederos ilegales por comuna en la Región Metropolitana'
+    },
+    xAxis: {
+        categories: comunas
+    },
+    yAxis: {
+        title: {
+            text: 'N° de vertederos ilegales'
+        }
+    },
+    series: [{
+        name: 'Comunas',
+        data: vertederos,
+        color: "#074434"  // Color verde
+    }]
+});
+</script>
+
+<p>Así como los vertederos ilegales tienen múltiples consecuencias negativas para el territorio y sus comunidades, los microbasurales también los tienen y de forma más directa. Ya que estos, se encuentran principalmente en zonas interurbanas como calles, esquinas, y pequeños terrenos públicos y/o privados en situación de abandono. </p>
+
     </div>
 
     <div id="section3" class="section" style="background-color: #074434; color: #FFF6E7;">
