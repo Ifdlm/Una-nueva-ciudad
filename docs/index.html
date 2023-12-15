@@ -233,7 +233,55 @@
         
         <p>Sin embargo, los residuos que llegan a vertederos o basurales ilegales no siempre vienen de la población civil. También hay un amplio sector industrial que genera desechos a gran escala. Pese a que con ellos existe una mayor fiscalización, en algunos casos también se da que sus residuos terminan en sitios no habilitados. </p>
         
-        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Pie</title>
+    <!-- Agrega las bibliotecas de Highcharts desde el CDN -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+</head>
+<body>
+    <!-- Crea un contenedor para el gráfico -->
+    <div id="pieChart" style="width: 80%; margin: auto;"></div>
+
+    <script>
+    // Define los datos para el gráfico de pie
+    var datosPie = [
+        { name: 'Industria manufacturera', y: 39.1, color: '#074434' },
+        { name: 'Suministro de electricidad, gas y agua', y: 16.7, color: '#FFF6E7' },
+        { name: 'Actividades inmobiliarias, empresariales y de alquiler', y: 15.7, color: '#FF0000' }  // Cambiado a rojo
+    ];
+
+    // Crea el gráfico de pie
+    Highcharts.chart('pieChart', {
+        chart: {
+            type: 'pie',
+            backgroundColor: 'transparent'  // Fondo transparente
+        },
+        title: {
+            text: 'Sectores productivos que más residuos generan'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            name: 'Porcentaje',
+            colorByPoint: true,
+            data: datosPie
+        }]
+    });
+    </script>
         <!DOCTYPE html>
         <html lang="en">
         <head>
