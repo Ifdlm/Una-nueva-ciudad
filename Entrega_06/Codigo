@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap">
+    <title>Por un Chile más Limpio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" type="image/png">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9vErjWD71QQi062SaDyCmul2pNFyi4lqw9RrrrxZAx02paNoaYGlxfkvTj0L2tbxQSdEaxJWDX3VycecD7OnZVorQgseycppiwGAJEjYwwNtcGRV5Q879jT0QoDtStpqMd3Q6cO1IOwhCLPbuvRkWlt2D-M3JM1pxcml1DHPhmHUMbQ1LunkkHYp136k/s320/POR_UN_CHILE__1_-removebg-preview.png" alt="Por un Chile más Limpio">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#section1">¿Qué está pasando?</a></li>
+                <li><a href="#section2">Situación a nivel país</a></li>
+                <li><a href="#section3">Impacto a la comunidad</a></li>
+                <li><a href="#section4">¿Qué podemos hacer?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner-container" onclick="showWelcomeMessage()">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiaNgTkQJa5RHQ99dJSjNAt-igzftvQWFrZpJRgn9xU2-CXudRlsQsRcnSFukqAIdFWaqwsRR8Ty2LdxqLVw7OrZCUF2JlzeIXpGtUconUft8AqFee4NxArURprCIdqkiwSAxmRyQf23us853jlzQyh_peKxWyyfTXmU6kMFwPdXN-UQutkjmjQT3TnWQo=s16000" alt="Banner">
+
+    <div id="section1" class="section" style="background-color: #074434; color: #FFF6E7;">
+        <iframe width="960" height="540" data-original-width="1920" data-original-height="1080" src="https://www.thinglink.com/view/scene/1791939094666805925" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><script async src="//cdn.thinglink.me/jse/responsive.js"></script>
+       
+        <h2>¿Qué está pasando?</h2>
+        
+          
+        <p>A lo largo de nuestro país, existen muchos sitios utilizados como vertederos ilegales, ocupando territorio de la comunidad con fines clandestinos y que causan un daño al medioambiente y a la dignidad de los vecinos. La acumulación de residuos en tales sitios genera un impacto ambiental con múltiples aristas: contaminación del agua subterránea, daño a la fertilidad del suelo, generación de gases contaminantes, destrucción de ecosistemas, riesgos sanitarios para quienes viven cerca, entre otros tantos efectos preocupantes.</p>
+        <p>Ante la existencia de esta problemática, el propósito de nuestro sitio es informar y generar conciencia, explicando cómo reutilizar y entregando tips verdes.</p>
+        <p>Por un Chile más limpio, aunque nace como proyecto informativo, tiene la finalidad de generar comunidad permitiendo instancias de participación. Juntos, queremos organizar y participar en campañas de reciclaje y recolección de basura, además de acercar las problemáticas de los vecinos a las diversas instituciones y autoridades encargadas de velar por el bien común. No podemos permitir que contaminen nuestro entorno. </p>
+       <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjrN_OBDPiHYQSzYxq5_-sxSGlXCAx3LzgX3WjvohtkVflYU9c2PGSNIa2D15-HTZ5nwgLbb4-ygey-BGZb-2AksLYdcBGNfpmf1dy-oxrYZd8lY-kLe2gwrlJsg4ZhE6yy5qx2gjlNl5MjbFEYbTukSDbYN0Gr7ttT1Gxr4fNndJ-9qNhSXyoqzzMfTBs=s16000" alt="Basural Maipu">
+       
+        <h3>El problema</h3>
+        <p>Lo de los vertederos ilegales no es un fenómeno nuevo. De hecho, tradicionalmente era habitual que los vecinos, sobre todo de las localidades pequeñas, utilizaran vertederos incontrolados en las afueras para eliminar basura doméstica, restos vegetales o escombros. Estos vertederos carecían de cualquier control sanitario, técnico o físico, llegando a tener efectos nocivos para el entorno en el que se ubicaban y para sus alrededores.</p>
+        <p> -          Su presencia es sinónimo de focos de infección.</p>  
+        <p> -          La basura en descomposición atrae a roedores e insectos.</p>
+        <p> -          Peligro de combustión y, por lo tanto, de incendios forestales. </p>
+        <p> -          Todos los vertederos generan gases contaminantes. La descomposición y fermentación de la materia orgánica genera biogás, una mezcla de gas metano (CH4) y dióxido de carbono (CO2), responsable del calentamiento global. En los vertederos ilegales, a un mayor número de gases hay que añadir los malos olores que producen.</p>
+        <p>>-          Una mala gestión de la basura degrada el suelo y el paisaje, además de contaminar acuíferos y aguas superficiales. La contaminación se produce por el arrastre de materiales pesados como el plomo o el mercurio, presentes en algunos tipos de basura. </p>
+
+        <div id="section2" class="section" style="background-color: #FFF6E7; color: #074434;">
+            <h2>La situación a nivel país</h2>
+        
+        <p>Según cifras del Ministerio del Medioambiente, durante el año 2020, en un contexto de pandemia y confinamiento ocasionado por el COVID-19- en nuestro país se generaron 18 millones de toneladas de residuos. De este total, el 96,7% fueron clasificados como residuos no peligrosos, mientras que un 3,3% fueron residuos peligrosos. En la misma línea fueron generados 7,9 millones de toneladas de residuos municipales para una población de 21 millones de habitantes. </p>
+        <p>A lo largo de todo Chile, cada persona genera diariamente 1,26 kilos de desechos, lo que lleva a que a nivel nacional se generen 24 mil toneladas al día. Esto nos convierte en el país que más produce basura diaria por persona en todo Sudamérica. Tomando en cuenta estos datos, se prevé que la tasa de reciclaje domiciliario de envases llega apenas al 4%</p>
+        <p>Lo preocupante también es saber qué es lo que se está haciendo con estos residuos. Si bien se han comenzado a implementar leyes que buscan reducir el impacto de la basura, de los 7,9 millones de toneladas de residuos domiciliarios al año, solo el 2% de ellos se recicla.</p>
+        <p>Valorizar los residuos significa optimizar sus características a partir de procesos de reutilización, recuperación y reciclado. También hace referencia a un proceso, a una operación cuyo objetivo es darle al residuo una utilidad. Por ejemplo, la sustitución de otros materiales para realizar una función. </p>
+    
+
+            
+            <div id="lineChart" style="width: 80%; margin: auto;"></div>
+        
+            <script>
+                
+                var datosLinea = [
+                    { year: 2015, value: 21.1 },
+                    { year: 2016, value: 21.2 },
+                    { year: 2017, value: 23 },
+                    { year: 2018, value: 19.6 },
+                    { year: 2019, value: 20 },
+                    { year: 2020, value: 18 }
+                ];
+        
+                
+                Highcharts.chart('lineChart', {
+                    chart: {
+                        type: 'spline',
+                        backgroundColor: 'transparent' // Fondo transparente
+                    },
+                    title: {
+                        text: 'Residuos anuales a nivel nacional 2015-2020'
+                    },
+                    xAxis: {
+                        type: 'category',
+                        categories: datosLinea.map(item => item.year),
+                        title: {
+                            text: 'Año'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Millones de Toneladas'
+                        }
+                    },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                enabled: true
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Residuos',
+                        color: '#074434',
+                        data: datosLinea.map(item => item.value)
+                    }]
+                });
+            </script>
+        </body>
+        </html>
+        
+        
+        <P>La Región Metropolitana es la que más residuos genera a nivel país. Lo cual puede parecer obvio si se considera la supremacía de población que tiene frente al resto de las regiones. No obstante, esto también significa mayores desafíos para controlar los residuos que terminan en vertederos ilegales o microbasurales. </P>
+        
+       <H2> ¿Qué es lo que botamos los chilenos?</H2>
+       <p>El Ministerio del Medioambiente estudió cuáles son los principales desechos que los chilenos botan diariamente en sus hogares. Es importante aclarar que existen distintas categorías de residuos: </p>
+       
+       
+        <p><strong>Residuo sólido, basura, desecho o desperdicio:</strong> Sustancias, elementos u objetos cuyo generador (persona) elimina, se propone eliminar o está obligado a eliminar.</p>
+
+        <p><strong>Residuos sólidos domiciliarios:</strong> Residuos sólidos, basuras, desechos o desperdicios generados en viviendas y en establecimientos tales como edificios habitacionales, locales comerciales, locales de expendio de alimentos, hoteles, establecimientos educacionales y cárceles.</p>
+    
+        <p><strong>Residuos sólidos municipales:</strong> Los residuos sólidos domiciliarios, los residuos similares a los anteriores generados en el sector servicios y pequeñas industrias y los residuos sólidos municipales derivados del aseo de vías públicas, áreas verdes y playas.</p>
+    
+        <p><strong>Residuo peligroso:</strong> Residuo o mezcla de residuos que presenta riesgo para la salud pública y/o efectos adversos al medio ambiente, ya sea directamente o debido a su manejo actual o previsto.</p>
+    
+        <p><strong>Residuo no peligroso:</strong> Residuo que no presenta riesgo para la salud pública ni efectos adversos al medio ambiente.</p>
+    
+
+          
+    <div id="pieChart" style="width: 80%; margin: auto;"></div>
+
+    <script>
+    // 
+    var datosPie = [
+        { name: 'Industria manufacturera', y: 22.3, color: '#074434' },
+        { name: 'Suministro de electricidad, gas y agua', y: 54.5, color: '#FFF6E7' },
+        { name: 'Actividades inmobiliarias, empresariales y de alquiler', y: 23.3, color: '#FF0000' }  // Cambiado a rojo
+    ];
+
+    
+    Highcharts.chart('pieChart', {
+        chart: {
+            type: 'pie',
+            backgroundColor: 'transparent'  // Fondo transparente
+        },
+        title: {
+            text: 'Sectores productivos que más residuos generan'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            name: 'Porcentaje',
+            colorByPoint: true,
+            data: datosPie
+        }]
+    });
+    </script>
+        
+        <p>Sin embargo, los residuos que llegan a vertederos o basurales ilegales no siempre vienen de la población civil. También hay un amplio sector industrial que genera desechos a gran escala. Pese a que con ellos existe una mayor fiscalización, en algunos casos también se da que sus residuos terminan en sitios no habilitados. </p>
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Pie</title>
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+</head>
+<body>
+    
+    <div id="pieChart" style="width: 80%; margin: auto;"></div>
+
+    <script>
+    
+    var datosPie = [
+        { name: 'Industria manufacturera', y: 39.1, color: '#074434' },
+        { name: 'Suministro de electricidad, gas y agua', y: 16.7, color: '#FFF6E7' },
+        { name: 'Actividades inmobiliarias, empresariales y de alquiler', y: 15.7, color: '#FF0000' }  // Cambiado a rojo
+    ];
+
+    
+    Highcharts.chart('pieChart', {
+        chart: {
+            type: 'pie',
+            backgroundColor: 'transparent'  // Fondo transparente
+        },
+        title: {
+            text: 'Sectores productivos que más residuos generan'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            name: 'Porcentaje',
+            colorByPoint: true,
+            data: datosPie
+        }]
+    });
+    </script>
+       
+           
+    
+            
+            <div id="pieChart" style="width: 80%; margin: auto;"></div>
+        
+            <script>
+            
+            var datosPie = [
+                { name: 'Industria Envases y embalajes', y: 54.4 },
+                { name: 'Residuos orgánicos', y: 23.3 },
+                { name: 'Residuos no reciclables (relleno sanitario)', y: 22.3 }
+            ];
+        
+            
+            var colores = ["#074434", "#FFF6E7", "#87CEEB"];  // Verde, crema, celeste
+        
+            
+            Highcharts.chart('pieChart', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'transparent'  // Fondo transparente
+                },
+                title: {
+                    text: 'Bolsa de basura promedio de los hogares en Chile'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Porcentaje',
+                    colorByPoint: true,
+                    data: datosPie,
+                    colors: colores
+                }]
+            });
+            </script>
+        
+        <h2>Diferencia entre vertederos legales e ilegales</h2>
+
+        <p>Ahora bien, teniendo en cuenta las cifras, el otro principal problema que ocurre es que muchos de los residuos que genera la población y también los sectores industriales, terminan en sitios de disposición ilegal, entre los cuales encontramos los vertederos ilegales, basurales, microbasurales, entre otros.</p>
+        <p>En total, existen 3.735 sitios de disposición final ilegal de residuos (RCD y otros residuos sólidos domésticos en su mayoría a nivel nacional. Dentro de estos 3.735 sitios, el 34,65% (3.492 sitios) son microbasurales (sitios menores a 1 Hectárea.), 2,41% (243 sitios) son vertederos ilegales.</p>
+        
+        <iframe width="960" height="540" data-original-width="1920" data-original-height="1080" src="https://www.thinglink.com/view/scene/1791950970591117989" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><script async src="//cdn.thinglink.me/jse/responsive.js"></script>
+        
+        <p>La principal diferencia entre vertederos legales e ilegales es el control de riesgos y efectos negativos en la eliminación de residuos complejos. Aunque las sustancias vertidas en los vertederos no se pueden re-aprovechar, facilitan la degradación de la materia orgánica posibilitando el aprovechamiento, al menos, de los gases generados. También se garantiza la futura reutilización de la zona.</p>
+        <p>Los vertederos, como estructura, tienen un funcionamiento regulado. Algunas de sus características son las que se presentan en la siguiente imagen.</p>
+
+
+       <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiegf2xS02WJYEhHle4CX85YHG7uARDSJXboe1N3S6Wgbwk_5Exwbt0nU9U4TcmpMpVX52mhTHM18Zpzl7EzP8nzslNy9a0G9_mebF0T1ZgH85kr9eImvxitXdf4Dzjb59Mp0LI1PD_2l6a9eWJTC9k-14Tn2cRhpLE32EpbZc3tddf_QuazvNmr4GwYKk=s16000" alt="Verterderos sanos">
+
+       <p>A lo largo y ancho de la RM, muchos de los vertederos ilegales se encuentran en comunas de bajo nivel socioeconómico o periféricas. Lamentablemente, quienes viven cerca de estos sectores, no han sentido esta situación como una problemática, muchos de ellos han crecido en ese entorno vulnerable en el que se desecha la basura de manera ilegal e incluso, hasta pueden llegar a formar parte de este mal hábito botando sus propios desechos en esquinas o calles utilizadas para estos fines. </p>
+
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Column Chart</title>
+           
+           <script src="https://code.highcharts.com/highcharts.js"></script>
+           <script src="https://code.highcharts.com/modules/exporting.js"></script>
+           <script src="https://code.highcharts.com/modules/export-data.js"></script>
+       </head>
+       <body>
+           
+           <div id="columnChart" style="width: 80%; margin: auto;"></div>
+       
+           <script>
+           
+           var regiones = ["Arica y Parinacota", "Tarapacá", "Antofagasta", "Atacama", "Coquimbo", "Valparaíso", "Metropolitana", "O’Higgins", "Maule", "Ñuble", "Biobío", "La Araucanía", "Los Ríos", "Los Lagos", "Aysén", "Magallanes y la Antártica Chilena"];
+           var eliminacion = [1.00087495, 0.48002237, 1.208359, 0.98932164, 1.04874611, 1.1547222, 1.18286903, 0.82040436, 0.82470801, 0.80400507, 0.89010876, 0.44265617, 0.8107323, 1.11542343, 1.21052448, 1.57863597];
+       
+           
+           Highcharts.chart('columnChart', {
+               chart: {
+                   type: 'bar',
+                   backgroundColor: 'transparent' 
+               },
+               title: {
+                   text: 'Generación de residuos municipales por habitante por región 2020'
+               },
+               xAxis: {
+                   categories: regiones
+               },
+               yAxis: {
+                   title: {
+                       text: 'Eliminación (Kilogramos/habitante/día)'
+                   }
+               },
+               series: [{
+                   name: 'Eliminación',
+                   data: eliminacion,
+                   color: "#074434"  // Color verde
+               }]
+           });
+           </script>
+       </body>
+       </html>
+
+       <p>Esto nos permite detectar varias problemáticas, entre ellas, que las autoridades no están llegando a todos los sectores a limpiar la basura y que falta un problema de educación y cultura. Si lo llevamos a sectores que no tienen basurales, como Las condes o Lo Barnechea, los vecinos no permitirían que ocurra algo así y apenas se dé un indicio de basurales harían lo posible por acabar con eso.Por qué se permite esta situación en otros sectores, por qué no les llama la atención.</p>
+
+
+
+
+<div id="columnChart" style="width: 80%; margin: auto;"></div>
+
+<script>
+
+var comunas = ["Maipú", "Puente Alto", "Quilicura", "Lampa", "Cerro Navia", "Pudahuel", "Las Condes", "Lo Barnechea"];
+var vertederos = [8, 6, 9, 8, 2, 11, 0, 0];
+
+
+Highcharts.chart('columnChart', {
+    chart: {
+        type: 'column',
+        backgroundColor: 'transparent'  // Fondo transparente
+    },
+    title: {
+        text: 'Vertederos ilegales por comuna en la Región Metropolitana'
+    },
+    xAxis: {
+        categories: comunas
+    },
+    yAxis: {
+        title: {
+            text: 'N° de vertederos ilegales'
+        }
+    },
+    series: [{
+        name: 'Comunas',
+        data: vertederos,
+        color: "#074434"  // Color verde
+    }]
+});
+</script>
+
+<p>Así como los vertederos ilegales tienen múltiples consecuencias negativas para el territorio y sus comunidades, los microbasurales también los tienen y de forma más directa. Ya que estos, se encuentran principalmente en zonas interurbanas como calles, esquinas, y pequeños terrenos públicos y/o privados en situación de abandono. </p>
+
+    </div>
+
+    <div id="section3" class="section" style="background-color: #074434; color: #FFF6E7;">
+        <h2>Microbasurales y su impacto en la comunidad</h2>
+        <p>Para efectos de este análisis, se seleccionará la comuna de Maipú, una de las más pobladas a nivel nacional, ubicada hacia el sector poniente de la RM. Beatriz Zamora es vecina de uno de los barrios más vulnerables de la comuna y cuenta lo desagradable que es tener muchos focos de basura cerca de su casa. </p>
+
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiJVy5_Hee1vVMoZOXWg7TqgNiFPCQSUaQJki9ZO4zkPVbIk9zBFa5emY7kSB7XdEhFOtEL1LruhjmrML0D1nXbVlBTmH5Qsx3dm5_ALAOoPsGJ2BxxWjTP87fC95mvQ2wGTbtp89z-oVxhc3Qi44x5PgVb4jFiomOX11yotFofH3cOrsgWhIBU_MjPK_4=s16000" alt="BeatrizZamora">
+     
+      <p>Según datos publicados por la Dirección de Aseo, Ornato y Gestión Ambiental (DAOGA) de la Municipalidad de Maipú, existen más de 50 lugares en la comuna en los que, por diversos motivos, se acumula basura de manera ilegal, lo que genera focos de infección, aumento de insectos en el sector, y no está de más mencionar los malos olores que estos generan. Habitualmente estos microbasurales se generan en pequeñas esquinas o terrenos del espacio público. Y están formados por residuos que provienen principalmente de la población civil, como lo son la ropa, los electrodomésticos, muebles, juguetes o artefactos en mal estado, entre otros. </p>
+
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhay1M_czQadaRBJUaNG4F1_5YnfMajKg0SLjOu_wFeLreZ3NnRqS4hg1j_EdaffjX_Me-vcMdp2UV2J943Upf6a_BZgG0fAK8DTT_BDPSApDTJw7VCvkiP5J3lvkwMTVa5qwSQTGqHAXDWqNJKCx9699mGrDEaL8Y_pTpVG7e8EpMeUd-WfqWxWuWgxkQ=s16000" alt="Basura en maipu">
+
+      <p>Es importante señalar, que el problema de los microbasurales no es algo meramente estético. Sino que estos tienen múltiples riesgos que afectan la salud y vida diaria de los ciudadanos. </p>
+       
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEirakbkqfhT244GHETA61JwUZEZ7YwNRwimtYgkEOKaYbg4AWg638ehATmOGsZPlOp9CxOHvkqFiJkzDiozvrBp8ApImKnW2ITXb7driPCusE0GdVjM-y7Az65Zt4o6NVdhnamj_hh5m_KJAhZ20Gn8Pu4KcCilNI_frr598gBwBJmP-fAOo1JvU7nxbQA=s16000" alt="Consecuencias Microbasurales">
+  
+  <div id="section4" class="section" style="background-color: #FFF6E7; color: #074434;">
+    <h2>¿Qué podemos hacer?</h2>
+    <p> En la búsqueda de un entorno más limpio y sostenible, cada acción cuenta. Al adoptar prácticas responsables y conscientes, podemos contribuir significativamente a la reducción de la contaminación y la generación de vertederos ilegales en nuestras ciudades. Desde decisiones diarias en el manejo de residuos hasta la promoción de un consumo responsable, hay diversas maneras en las que podemos marcar la diferencia. Descubre a continuación algunas recomendaciones para vivir en armonía con nuestro entorno y colaborar en la construcción de ciudades más limpias para las generaciones futuras.</p>
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi7nnBw-lbHmUwH-OzZ8p-clDwpgX_xEz58mDneLd0vRJqZmyy_Suco5Tez7wviM-8ancgB3giyB9rQfLRpyOjVFpTmnHnvdxU6y0bPuZLeDobkDDZNX6Ovr--1CgvbJYYSxszC5G1Mp29a1-nge_JRvChC0x2UhjmnWNXxhBKtWO71sjm7kMQlvZvmBoY=s16000" alt="">
+    
+    <p>Contribuir a un ambiente más limpio y reducir la generación de vertederos ilegales es esencial para el bienestar de nuestra comunidad. Aquí hay algunas acciones que podemos tomar:</p>
+
+    <ol>
+        <li><strong>Reciclar:</strong> Separa tus residuos y utiliza los contenedores de reciclaje disponibles en tu área.</li>
+
+        <li><strong>Reducir el Uso de Plásticos:</strong> Opta por productos reutilizables y evita el uso excesivo de plásticos desechables.</li>
+
+        <li><strong>Participar en Limpiezas Comunitarias:</strong> Únete a actividades locales de limpieza para mantener espacios públicos libres de basura.</li>
+
+        <li><strong>Consumir de Forma Consciente:</strong> Elige productos con envases sostenibles y apoya a empresas comprometidas con la responsabilidad ambiental.</li>
+
+        <li><strong>Educación Ambiental:</strong> Comparte información sobre prácticas sostenibles con amigos y familiares para crear conciencia.</li>
+    </ol>
+
+    <p>Pequeñas acciones cotidianas pueden marcar la diferencia. ¡Juntos podemos construir ciudades más limpias y saludables para todos!</p>
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjnyVu9c9smtdclyJ_d2B2DDUEWIIZJ1NzWTj5Plw8EmjJ0lFd3JqnSoQKOFBnVZhCoa-Q-LjSxgjPE2DUKG6xMhT-fZLOhHSVC6A2IHSno91IB-b5vNrdRTUMUU71oFLvW60SvTYzCN8712G-b1xEJ9_tqRMgeWkhJAtr-BjZSsRp529r9R6N6YPWj4Mk=s16000" alt="Despedida mascota">
+
+</div>
+
+<footer id="footer" style="background-color: #074434; color: #FFF6E7;">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tcPwuGOYk2Wsteo7qT5Y5lRkd2KNXhJSl3cOKqKNQrH_ImC5TkwXJG6Wf9vy23C0l_113nHZsZIDt619pD9vSJq0iPUmt8IldtJ0p_9YzhlZNgssh7pgYb9ycSoGCF5z4l5Av_zn31_2Tg7uhhhb1ugSqG96feqPGG7sR41sa6-HLNGcnzGQmH4HcGw/s320/POR%20UN%20CHILE.png" alt="Logo">
+        </div>
+        <p class="footer-text">
+            Proyecto para el ramo Narración Gráfica de No Ficción de la malla de Periodismo en Pontificia Universidad Católica de Chile.
+            Integrantes: Angel Olmedo, Javier Muñoz Díaz e Ignacio Flores De la Maza.
+            Proyecto: X un Chile + Limpio.
+        </p>
+        <button onclick="redirectToYouTube()" class="youtube-button">Visita nuestro canal de YouTube</button>
+    </div>
+</footer>
+
+<script>
+    function redirectToYouTube() {
+        window.location.href = "https://youtu.be/ecy1kkwR_kQ?si=skHEe3QWEsy2f_J_";
+    }
+</script>
+
+</body>
+</html>
